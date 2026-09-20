@@ -2,23 +2,13 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import WaDateInput from "@awesome.me/webawesome-pro/dist/react/date-input/index.js"
+
 function App() {
+  const foobar = new Date()
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <WaDateInput value={new Date()} />
     </div>
   );
 }
